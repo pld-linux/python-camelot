@@ -10,6 +10,7 @@ Source0:	http://pypi.python.org/packages/source/C/Camelot/Camelot-%{version}.tar
 # Source0-md5:	4452cc2e4536e283117a153a907979dc
 URL:		http://www.conceptive.be/projects/camelot/
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 Requires:	python-SQLAlchemy >= 0.4
@@ -26,7 +27,6 @@ Django admin interface.
 %description -l pl.UTF-8
 Szkielet graficznego interfejsu użytkownika na bazie Sqlalchemy,
 elixir i PyQt, zainspirowany interfejsem administracyjnym Django.
-
 
 %prep
 %setup -q -n Camelot-%{version}
