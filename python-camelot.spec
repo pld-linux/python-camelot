@@ -3,7 +3,7 @@ Summary:	A python GUI framework on top of  Sqlalchemy  and PyQt
 Summary(pl.UTF-8):	Szkielet graficznego interfejsu użytkownika na bazie Sqlalchemy i PyQt
 Name:		python-%{module}
 Version:	09.07.17
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/C/Camelot/Camelot-%{version}.tar.gz
