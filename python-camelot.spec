@@ -32,14 +32,11 @@ elixir i PyQt, zainspirowany interfejsem administracyjnym Django.
 %setup -q -n Camelot-%{version}
 
 %build
-export CFLAGS="%{rpmcflags}"
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%{__python} setup.py install \
-	--optimize=2 \
-	--root=$RPM_BUILD_ROOT
+%py_install
 
 %py_ocomp $RPM_BUILD_ROOT%{py_sitedir}
 %py_comp $RPM_BUILD_ROOT%{py_sitedir}
