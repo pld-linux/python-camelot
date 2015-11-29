@@ -12,7 +12,7 @@ URL:		http://www.conceptive.be/projects/camelot/
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 Requires:	python-SQLAlchemy >= 0.4
 Requires:	python-elixir >= 0.6
 Conflicts:	python-SQLAlchemy >= 0.5
