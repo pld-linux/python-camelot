@@ -1,0 +1,11 @@
+--- Camelot-09.07.17/setup.py~	2009-07-16 20:26:27.000000000 +0200
++++ Camelot-09.07.17/setup.py	2016-01-02 17:43:48.332414398 +0100
+@@ -18,7 +18,7 @@
+   include_package_data = True,
+   license = 'GPL, Commercial',
+   platforms = 'Linux, Windows, OS X',
+-  install_requires = ['SQLAlchemy==0.4.7',
++  install_requires = ['SQLAlchemy>=0.4.7',
+                       'Elixir>=0.6.1',
+                       'sqlalchemy-migrate>=0.5.3',
+                       'pyExcelerator>=0.6.4a',
