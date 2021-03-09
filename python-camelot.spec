@@ -1,14 +1,15 @@
-%define 	module	camelot
+%define		module	camelot
 Summary:	A python GUI framework on top of  Sqlalchemy  and PyQt
 Summary(pl.UTF-8):	Szkielet graficznego interfejsu użytkownika na bazie Sqlalchemy i PyQt
 Name:		python-%{module}
 Version:	09.07.17
-Release:	6
+Release:	7
 License:	GPL
 Group:		Development/Languages/Python
 Source0:	http://pypi.python.org/packages/source/C/Camelot/Camelot-%{version}.tar.gz
 # Source0-md5:	4452cc2e4536e283117a153a907979dc
 Patch0:		sqlalchemy.patch
+Patch1:		pillow.patch
 URL:		http://www.conceptive.be/projects/camelot/
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
@@ -32,6 +33,7 @@ elixir i PyQt, zainspirowany interfejsem administracyjnym Django.
 %prep
 %setup -q -n Camelot-%{version}
 %patch0 -p1
+%patch1 -p1
 
 %build
 %py_build

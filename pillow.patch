@@ -1,0 +1,11 @@
+--- Camelot-09.07.17/setup.py~	2021-03-09 09:18:30.000000000 +0100
++++ Camelot-09.07.17/setup.py	2021-03-09 09:20:11.286157695 +0100
+@@ -23,7 +23,7 @@
+                       'sqlalchemy-migrate>=0.5.3',
+                       'pyExcelerator>=0.6.4a',
+                       'Jinja>=1.2',
+-                      'PIL>=1.1.6', ],
++                      'pillow>=1.1.6', ],
+   entry_points = {'console_scripts':[
+                    'camelot_admin = camelot.bin.camelot_admin:main',
+                    'camelot_manage = camelot.bin.camelot_manage:main',
