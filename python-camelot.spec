@@ -32,8 +32,8 @@ elixir i PyQt, zainspirowany interfejsem administracyjnym Django.
 
 %prep
 %setup -q -n Camelot-%{version}
-%patch0 -p1
-%patch1 -p1
+%patch -P0 -p1
+%patch -P1 -p1
 
 %build
 %py_build
